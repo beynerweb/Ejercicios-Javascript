@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        body {
+            background: #0f0c29;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+        p{
+            font-size: 20px;
+
+        }
+        .resultado{
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            color: aqua;
+            
+            border: 1px solid #302b63;
+        }
+        button{
+            padding: 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejercicios Repetitivos con Javascript Manejo del DOM</h1>
+    <h2>BEYNERWEB</h2>
+    <p>2- Elaborar un algoritmo que imprima los números pares comprendidos entre 1 y 1000.</p>
+
+  
+        <button onclick="mostrarResultado()">Generar Resultado</button>
+        <div id="resultado"></div>
+   
+
+    <script>
+
+        function mostrarResultado(){
+          let texto = '';
+            for(let i = 0; i <= 1000; i++){
+               if (i % 2 !== 0) {
+                texto += `Numero Par [${i}]` + '<br/>';
+                console.log(i);
+               }
+               
+            }
+           
+            document.getElementById('resultado').innerHTML = texto;
+
+        }
+
+    </script>
+
+</body>
+
+</html>
