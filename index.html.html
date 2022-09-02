@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+    <style>
+        body {
+            background: #0f0c29;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            color: white;
+
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+
+        }
+
+        p {
+            font-size: 20px;
+
+        }
+
+        .resultado {
+            width: 100%;
+            height: auto;
+            font-size: 20px;
+            color: aqua;
+
+            border: 1px solid #302b63;
+        }
+
+        button {
+            padding: 10px;
+            margin: 2px;
+            cursor: pointer;
+        }
+
+        input {
+            margin: 20px;
+            padding: 10px;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Ejercicios Repetitivos con Javascript Manejo del DOM</h1>
+    <h2>BEYNERWEB</h2>
+    <p>4-Elaborar un algoritmo que lea un número entero positivo y obtenga los múltiplos de 3 comprendidos entre 3 y el
+        número leído.</p>
+
+
+
+    <label for="numero">Ingresar Numero Entero</label>
+    <input id="numero" name="numero" type="number">
+
+    <button onclick="mostrarResultado()">Generar Resultado</button>
+
+
+    <div id="resultado"></div>
+
+
+    <script>
+
+        function mostrarResultado() {
+            numero = parseInt(document.getElementById('numero').value)
+            console.log(numero);
+
+            texto = '';
+            
+            for (let i = 1; i <= numero; i++) {
+                if (i % 3 == 0) {
+                    texto += ` Numeros multiplo de  [3] ES : [${i}]` + '<br/>';
+                    console.log(i);
+                }else{
+                    texto = `El Numero [${numero}] No es un numero Multiplo de 3`
+                }
+
+
+            }
+
+            document.getElementById('resultado').innerHTML = `${texto}`;
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
