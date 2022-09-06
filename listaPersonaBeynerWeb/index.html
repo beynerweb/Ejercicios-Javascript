@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listado de personas BeynerWeb</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+
+
+    <header class="header contenedor">
+        <h2 class="heading"> Listado Personas Con js </h2>
+        <p class="header__titulo">Lista de Personas con JS Practicando JS</p>
+
+        <div class="caja">
+            <div class="caja__elementos">
+                <ul id="personas">
+                    <!-- <li>BEYNERWEB BEYNERWEB</li> -->
+                    
+                </ul>
+            </div>
+        </div>
+
+        <form id="forma">
+            
+                <input type="input" class="form__field" placeholder="Name" name="nombre" id='nombre' required />
+                <label for="nombre" class="form__label">Name</label>
+            </div>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Apellido" name="apellido" id='apellido' required />
+                <label for="apellido" class="form__label">Apellido</label>
+            </div>
+            <div class="form__group field">
+                <input type="number" class="form__field" placeholder="Telefono" name="telefono" id='telefono' required />
+                <label for="telefono" class="form__label">Telefono</label>
+            </div>
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="Telefono" name="direccion" id='direccion'
+                    required />
+                <label for="direccion" class="form__label">Direccion</label>
+            </div>
+        </form>
+            <div id="mensaje"></div>
+        <button onclick="agregarPersona()" class="gradient-underline">
+            Guardar Contacto
+        </button>
+
+    </header>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>
